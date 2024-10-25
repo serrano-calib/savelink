@@ -21,3 +21,9 @@ let object1 = {
         birth: "December"
 }
 console.log(object1.name);
+
+let object1 = {
+        name: "Bill",
+        birth: "May"
+}
+console.log(object1.name);
