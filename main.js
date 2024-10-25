@@ -7,3 +7,12 @@ button.onclick = () => {
         if (text.getHTML() === content1) text.innerHTML = content2;
         else text.innerHTML = content1;
 }
+
+registerServiceWorker();
+
+async function registerServiceWorker() {
+        registration = await navigator.serviceWorker.register("./sw.js", {
+                scope: "./"
+        });
+        console.log(registration);
+}
