@@ -14,5 +14,10 @@ async function registerServiceWorker() {
         registration = await navigator.serviceWorker.register("./sw.js", {
                 scope: "./"
         });
-        console.log(registration);
 }
+
+let object1 = {
+        name: "Calib",
+        birth: "December"
+}
+console.log(object1.name);
