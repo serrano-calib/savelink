@@ -1,0 +1,105 @@
+body {
+        margin: unset;
+        font: 1.25rem sans;
+        border: 0.6rem solid bisque;
+        border-top: unset;
+        background-color: floralwhite;
+}
+
+.toolbar {
+        margin: unset;
+        padding-inline-start: unset;
+        padding: 0.6rem 0.8rem;
+        background-color: bisque;
+}
+
+.toolbar > li {
+        display: inline;
+}
+
+.new-entry {
+        margin: unset;
+        background-color: lemonchiffon;
+        width: 18rem;
+}
+
+.new-entry p {
+        margin: unset;
+        margin-bottom: 1rem;
+}
+
+.item-list {
+}
+
+.item-list li, .new-entry {
+        padding: 1rem 2rem;
+}
+
+.item-list {
+        padding-inline-start: unset;
+        margin: unset;
+}
+
+.item-list > li {
+        display: block;
+}
+
+.item-list a {
+        text-decoration: unset;
+        color: unset;
+}
+
+.item-list a:hover {
+        text-decoration: underline;
+}
+
+button, input {
+        font: unset;
+}
+
+input {
+        box-sizing: border-box;
+        width: 100%;
+}
+
+.toolbar button {
+        padding: 0.4rem 0.8rem;
+        border: unset;
+        background-color: unset;
+}
+
+.toolbar button:hover{
+        background-color: cornsilk;
+}
+
+.new-entry input {
+        background-color: unset;
+        border: unset;
+        border-bottom: 0.2rem solid black;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.8rem;
+}
+
+.new-entry button {
+        background-color: moccasin;
+        border: unset;
+        padding: 0.6rem 1.2rem;
+        margin-right: 1rem;
+        border-radius: 99rem;
+        margin-bottom: 0.8rem;
+}
+
+.new-entry button:hover {
+        background-color: ivory;
+}
+
+.item-area {
+        height: calc(100vh - 4.3rem);
+        overflow-y: scroll;
+        border: 0.15rem solid peachpuff;
+}
+
+dialog {
+        padding: unset;
+        border: 0.15rem solid burlywood;
+}

@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test</title>
+        <title>Test</title>
+        <link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
-    <p id="text"></p>
-    <button id="button" type="button">CHANGE</button> 
-    <p><a href="about.html">About</a></p>
-    <script src="main.js"></script>
+        <header class="header">
+                <menu class="toolbar">
+                        <li><button>New</button></li>
+                </menu>
+        </header>
+        <dialog class="new-entry-dialog">
+                <form class="new-entry">
+                        <p><label>URL:</label>
+                                <input class="url-input"/><label>Name:</label>
+                                <input class="name-input"/>
+                        </p>
+                        <button class="save-entry" type="button">Save</button>
+                        <button class="discard-entry" type="button">Discard
+                        </button>
+                </form>
+        </dialog>
+        <section class="item-area">
+                <article>
+                        <ul class="item-list">
+                        </ul>
+                        <template class="item">
+                                <li><a class="item-url" 
+                                        href="https://www.mozilla.org">
+                                        <span class="item-name">Mozilla</span>
+                                    </a>
+                                </li>
+                        </template>
+                </article>
+        </section>
+        <script src="./main.js" type="module"></script>
 </body>
 </html>

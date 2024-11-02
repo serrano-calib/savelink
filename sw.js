@@ -5,10 +5,12 @@ const RESOURCES = [
         "/favicon.ico",
         "/index.html",
         "/about.html",
-        "/main.js"
+        "/style.css",
+        "/main.js",
+        "/service-worker.js"
 ];
 
-const CACHE_VERSION = "1.0.10";
+const CACHE_VERSION = "1.0.13";
 
 async function deleteOldCache() {
         let allCache;
@@ -41,10 +43,10 @@ async function respondWithCache(request) {
         return caches.match(request);
 }
 
-self.addEventListener("install", function (event) {
+globalThis.addEventListener("install", function (event) {
         event.waitUntil(addToCache(RESOURCES));
 });
 
-self.addEventListener("fetch", function (event) {
+globalThis.addEventListener("fetch", function (event) {
         event.respondWith(respondWithCache(event.request));
 });
