@@ -103,5 +103,5 @@ function displayItems(items) {
         }
 }
 
-//registerServiceWorker();
+registerServiceWorker();
 init();
