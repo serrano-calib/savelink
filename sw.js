@@ -10,7 +10,7 @@ const RESOURCES = [
         "/service-worker.js"
 ];
 
-const CACHE_VERSION = "1.0.13";
+const CACHE_VERSION = "1.0.14";
 
 async function deleteOldCache() {
         let allCache;

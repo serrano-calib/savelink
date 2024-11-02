@@ -20,7 +20,9 @@ body {
 .new-entry {
         margin: unset;
         background-color: lemonchiffon;
-        width: 18rem;
+        max-width: 18rem;
+        max-height: calc(100vh - 8rem);
+        overflow-y: scroll;
 }
 
 .new-entry p {
